@@ -22,15 +22,14 @@ namespace GwentApp.Models
             get
             {
                 List<SelectListItem> listitems = new List<SelectListItem>();
-                for (int i = 1; i < 5; i++)
-                {
-                    SelectListItem item = new SelectListItem();
-                    string name = "faction" + i;
-                    item.Value = name;
-                    item.Text = name;
-                    listitems.Add(item);
-
-                }
+                SelectListItem f1 = new SelectListItem() { Value = "NE", Text = "Nilfgaardian Empire" };
+                listitems.Add(f1);
+                SelectListItem f2 = new SelectListItem() { Value = "NK", Text = "Northern Kingdoms" };
+                listitems.Add(f2);
+                SelectListItem f3 = new SelectListItem() { Value = "ST", Text = "Scoia'tael" };
+                listitems.Add(f3);
+                SelectListItem f4 = new SelectListItem() { Value = "MS", Text = "Monsters" };
+                listitems.Add(f4);
                 return listitems;
             }
         }
