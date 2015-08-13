@@ -31,7 +31,7 @@ namespace GwentApp.Models
             {
                 List<SelectListItem> listitems = new List<SelectListItem>();
                 listitems.Add(new SelectListItem() { Value = "NE", Text = "Nilfgaardian Empire" });
-                listitems.Add(new SelectListItem() { Value = "NK", Text = "Northern Kingdoms" });
+                listitems.Add(new SelectListItem() { Value = "NR", Text = "Northern Realms" });
                 listitems.Add(new SelectListItem() { Value = "ST", Text = "Scoia'tael" });
                 listitems.Add(new SelectListItem() { Value = "MS", Text = "Monsters" });
                 return listitems;
@@ -42,10 +42,10 @@ namespace GwentApp.Models
             get
             {
                 List<SelectListItem> leaderlist = new List<SelectListItem>();
-                leaderlist.Add(new SelectListItem() { Value = "NK", Text = "Foltest the steel forged" });
-                leaderlist.Add(new SelectListItem() { Value = "NK", Text = "Foltest Lord commander of the North" });
-                leaderlist.Add(new SelectListItem() { Value = "NK", Text = "Foltest King of Temeria" });
-                leaderlist.Add(new SelectListItem() { Value = "NK", Text = "Foltest the Siegemaster" });
+                leaderlist.Add(new SelectListItem() { Value = "NR", Text = "Foltest the steel forged" });
+                leaderlist.Add(new SelectListItem() { Value = "NR", Text = "Foltest Lord commander of the North" });
+                leaderlist.Add(new SelectListItem() { Value = "NR", Text = "Foltest King of Temeria" });
+                leaderlist.Add(new SelectListItem() { Value = "NR", Text = "Foltest the Siegemaster" });
                 return leaderlist;
             }
         }
