@@ -25,6 +25,9 @@ namespace GwentApp.Models
             get;
             set;
         }
+        /// <summary>
+        /// factions
+        /// </summary>
         public static List<SelectListItem> factionselectlistitems
         {
             get
