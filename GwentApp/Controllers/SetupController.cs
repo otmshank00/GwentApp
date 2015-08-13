@@ -13,7 +13,23 @@ namespace GwentApp.Controllers
         public ActionResult Index()
         {
             Player player = new Player();
-            return View();
+            return View(player);
+        }
+        [HttpPost]
+        public ActionResult ProcessIndexFormView(Player player)
+        {
+            return View(player);
+        }
+        public ActionResult CreateDeck()
+        {
+            List<Card> deck = new List<Card>()
+            {
+                new Card() {name="Archer", power=1 },
+                new Card() {name="Catapult", power=10 },
+                new Card() {name="Spy", power=9 },
+                new Card() {name="Geralt", power=15 }
+            };
+            return View(deck);
         }
     }
 }
